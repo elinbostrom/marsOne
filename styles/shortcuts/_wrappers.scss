@@ -1,0 +1,24 @@
+// Startpage header
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-width: 300px;
+}
+
+.headerWrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "navigator"
+    "headerPicture";
+}
+
+.imgWrapper {
+  position: absolute;
+  object-fit: cover;
+}

@@ -1,0 +1,28 @@
+%squares {
+  background-color: white;
+  padding: 1.5em;
+  margin: 1em;
+  text-align: center;
+
+  h3 {
+    padding-bottom: 0.5em;
+    color: $red-text;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  button {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: $blue-text;
+    border: solid 1px $blue-text;
+    border-radius: 5px;
+    margin-top: 1em;
+    height: 30px;
+    width: 120px;
+  }
+}

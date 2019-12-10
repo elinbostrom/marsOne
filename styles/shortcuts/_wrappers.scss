@@ -19,6 +19,14 @@ body {
 }
 
 .imgWrapper {
-  position: absolute;
+  position: relative;
+  display: block;
   object-fit: cover;
+
+
+  img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
 }

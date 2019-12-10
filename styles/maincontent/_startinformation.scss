@@ -1,0 +1,56 @@
+.information {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+
+  &__picture {
+    margin: auto;
+
+    img {
+      max-width: 500px;
+      width: 100vw;
+    }
+  }
+
+  &__text {
+    padding: 1.5em;
+
+    h2 {
+      padding-bottom: 0.2em;
+      font-size: 20px;
+      color: $red-text;
+    }
+
+    p {
+      font-size: 12px;
+
+      span {
+        color: $red-text;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.readmore {
+  background-color: $grey-background;
+  margin: auto;
+
+  h2 {
+    color: $blue-text;
+    text-align: center;
+    padding-top: 1.5em;
+  }
+
+  &__mars {
+    @extend %squares;
+  }
+
+  &__move {
+    @extend %squares;
+  }
+
+  &__sun {
+    @extend %squares;
+  }
+}

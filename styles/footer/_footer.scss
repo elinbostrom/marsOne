@@ -1,0 +1,23 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: $blue-text;
+  padding: 2em;
+  color: white;
+
+  h2 {
+    font-size: 14px;
+    padding-bottom: 0.5em;
+  }
+
+  p {
+    font-size: 10px;
+    width: 220px;
+    align-self: center;
+
+    span {
+      color: $red-text;
+    }
+  }
+}

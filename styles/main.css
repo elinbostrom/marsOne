@@ -192,6 +192,32 @@ body {
   padding-top: 1.5em;
 }
 
+.readmore__mars img {
+  max-width: 65px;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: -30px;
+}
+
+.readmore .movePicture {
+  margin-bottom: 1em;
+}
+
+.readmore .movePicture img {
+  max-width: 100vw;
+  width: 100%;
+}
+
+.readmore .sunPicture {
+  position: absolute;
+  right: 0.5em;
+  margin-top: -70px;
+}
+
+.readmore .sunPicture img {
+  width: 100px;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;

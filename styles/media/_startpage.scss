@@ -1,0 +1,304 @@
+// Menu and header
+.navigator {
+  transition: all ease-in 1s;
+
+  @media (min-width: $tabletSize) {
+    flex-direction: row;
+  }
+
+  &__logo {
+    transition: all ease-in 1s;
+
+    @media (min-width: $tabletSize) {
+      margin: unset;
+      margin-right: auto;
+    }
+  }
+}
+
+// Big picture header 
+.startheader {
+  transition: all ease-in 1s;
+
+  @media (min-width: $tabletSize) {
+    justify-content: end;
+    align-items: start;
+  }
+
+  &__text {
+    transition: all ease-in 1s;
+
+    @media (min-width: $tabletSize) {
+      padding: 7em 4em 0 0;
+    }
+
+    @media (min-width: $desktopSize) {
+      padding: 9em 7em 0 0;
+    }
+  }
+}
+
+// Information
+.information {
+  transition: all ease-in 2s;
+
+  @media (min-width: $tabletSize) {
+    flex-direction: row;
+  }
+
+  &__picture {
+    transition: all ease-in 1s;
+
+    @media (min-width: $tabletSize) {
+      margin: unset;
+    }
+  }
+
+  img {
+    @media (min-width: $tabletSize) {
+      width: 50vw;
+    }
+
+    @media (min-width: $bigDesktopSize) {
+      max-width: 600px;
+    }
+  }
+
+  &__text {
+    align-self: center;
+    transition: all ease-in 1s;
+
+    @media (min-width: $tabletSize) {
+      padding: 1em 2em;
+    }
+
+    @media (min-width: $desktopSize) {
+      padding: 1em 3em;
+    }
+
+    @media (min-width: $bigDesktopSize) {
+      padding: 0 4em;
+    }
+  }
+
+  h2 {
+    @media (min-width: $tabletSize) {
+      font-size: 18px;
+    }
+
+    @media (min-width: $desktopSize) {
+      font-size: 24px;
+    }
+
+    @media (min-width: $bigDesktopSize) {
+      font-size: 36px;
+      text-align: left;
+      padding: 0 0 0.5em 0;
+    }
+  }
+
+  p {
+    @media (min-width: $tabletSize) {
+      font-size: 10px;
+    }
+
+    @media (min-width: $desktopSize) {
+      font-size: 12px;
+    }
+
+    @media (min-width: $bigDesktopSize) {
+      font-size: 20px;
+    }
+  }
+}
+
+.mainStartpage {
+  @media (min-width: $bigDesktopSize) {
+    padding-bottom: 2em;
+  }
+}
+
+// First section (Why Mars?)
+.readmore {
+  transition: all ease-in 1s;
+
+  @media (min-width: $desktopSize) {
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 0.8fr;
+    grid-template-areas:
+      "mars sun"
+      "move sun";
+    grid-gap: 1em;
+    margin: auto;
+  }
+
+  &__mars {
+    transition: all ease-in 2s;
+
+
+    @media (min-width: $tabletSize) {
+      margin-bottom: 1em;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      text-align: unset;
+    }
+
+    @media (min-width: $desktopSize) {
+      margin-bottom: 0;
+    }
+
+    .marsPicture {
+      transition: all ease-in 0.5s;
+
+      @media (min-width: $tabletSize) {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5em;
+      }
+    }
+
+    img {
+      transition: all ease-in 2s;
+
+      @media (min-width: $tabletSize) {
+        position: unset;
+        margin-top: unset;
+        margin-left: unset;
+        max-width: 150px;
+      }
+    }
+
+    .marsText {
+      transition: all ease-in 2s;
+
+      @media (min-width: $tabletSize) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2.5em;
+      }
+
+      @media (min-width: $desktopSize) {
+        padding: 0 1em;
+      }
+
+      @media (min-width: $bigDesktopSize) {
+        align-items: unset;
+      }
+    }
+
+  }
+}
+
+// Second section Just Move in
+.readmore {
+
+  &__move {
+    transition: all ease-in 1s;
+
+    @media (min-width: $tabletSize) {
+      text-align: left;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1em;
+    }
+
+    @media (min-width: $desktopSize) {
+      margin-bottom: 0;
+    }
+
+    .movePicture {
+      @media (min-width: $tabletSize) {
+        margin: 0 1em 0 0;
+        height: 100%;
+      }
+
+      img {
+        @media (min-width: $desktopSize) {
+          height: 100%;
+        }
+      }
+    }
+
+    .moveText {
+      @media (min-width: $tabletSize) {
+        max-width: 400px;
+      }
+
+      @media (min-width: $desktopSize) {
+        min-width: unset;
+        margin: unset;
+      }
+    }
+  }
+}
+
+// Third section , sun. 
+.readmore {
+
+  &__sun {
+    transition: all ease-in 1s;
+
+    @media (min-width: $tabletSize) {
+      display: grid;
+      grid-template-areas: "text sun";
+      align-items: center;
+    }
+
+    @media (min-width: $desktopSize) {
+      grid-area: sun;
+      display: grid;
+      grid-template-areas:
+        "sun"
+        "text";
+    }
+  }
+
+  .sunText {
+    @media (min-width: $tabletSize) {
+      padding-right: 3em;
+      grid-area: text;
+    }
+
+    @media (min-width: $desktopSize) {
+      padding-right: 0;
+    }
+  }
+
+  .sunPicture {
+    transition: all ease-in 1s;
+
+    @media (min-width: $tabletSize) {
+      flex: 1 1 50%;
+      position: unset;
+      right: unset;
+      margin-top: unset;
+    }
+
+    img {
+      @media (min-width: $tabletSize) {
+        width: unset;
+      }
+
+      @media (min-width: $desktopSize) {
+        margin: auto;
+      }
+    }
+
+  }
+}
+
+// Footer
+
+footer {
+
+  p {
+    @media (min-width: $bigDesktopSize) {
+      width: unset;
+    }
+  }
+}

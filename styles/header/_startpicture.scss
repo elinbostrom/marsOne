@@ -4,9 +4,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  background-image: linear-gradient(to bottom, #c15555, #240202),
+  background-image: linear-gradient(to bottom, #c1555552, #24020260),
     url("../../pictures/page-1/hero-1.jpg");
   background-position: center;
   background-size: cover;
+
+  &__text {
+    h1 {
+      color: white;
+      border-bottom: 2px solid white;
+    }
+
+    p {
+      color: $blue-text;
+      font-weight: bold;
+      max-width: 300px;
+      width: 80vw;
+    }
+  }
+
 }

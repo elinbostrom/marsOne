@@ -32,15 +32,22 @@
   }
 }
 
-.readmore {
+.mainStartpage {
   background-color: $grey-background;
   margin: auto;
 
   h2 {
     color: $blue-text;
     text-align: center;
-    padding-top: 1.5em;
+    padding: 2em 1em;
   }
+}
+
+
+.readmore {
+  max-width: 1200px;
+  padding: 1em;
+
 
   &__mars {
     @extend %squares;
@@ -54,16 +61,24 @@
   }
 
   .movePicture {
-    margin-bottom: 1em;
+    margin-top: 1em;
 
     img {
-      max-width: 100vw;
+      max-width: 600px;
       width: 100%;
     }
   }
 
   &__move {
     @extend %squares;
+    margin: unset;
+    padding: unset;
+
+    .moveText {
+      min-width: 300px;
+      padding: 1.5em;
+      margin: 0 1em 1em 0;
+    }
   }
 
   &__sun {

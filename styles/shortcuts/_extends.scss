@@ -1,17 +1,28 @@
 %squares {
   background-color: white;
   padding: 1.5em;
-  margin: 1em;
   text-align: center;
+
+  @media (min-width: $bigDesktopSize) {
+    text-align: left;
+  }
 
   h3 {
     padding-bottom: 0.5em;
     color: $red-text;
     font-weight: 400;
+
+    @media (min-width: $bigDesktopSize) {
+      font-size: 24px;
+    }
   }
 
   p {
     font-size: 12px;
+
+    @media (min-width: $bigDesktopSize) {
+      font-size: 18px;
+    }
   }
 
   button {

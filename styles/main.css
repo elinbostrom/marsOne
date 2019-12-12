@@ -62,6 +62,45 @@ body {
   -ms-grid-rows: auto 1fr;
       grid-template-rows: auto 1fr;
       grid-template-areas: "navigator" "headerPicture";
+  overflow: hidden;
+  position: relative;
+}
+
+.headerWrapper::after {
+  content: "";
+  position: absolute;
+  width: 130vw;
+  height: 100vw;
+  border-radius: 100%;
+  border: 20px solid #436dac;
+  -webkit-border-start: 5px;
+          border-inline-start: 5px;
+  -webkit-border-end: 5px;
+          border-inline-end: 5px;
+  background: linear-gradient(182deg, #00132c 61%, rgba(21, 52, 98, 0.9));
+  bottom: 15em;
+  left: -10vw;
+}
+
+.headerWrapper.startpage {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c1555552), to(#24020260)), url("../../pictures/page-1/hero-1.jpg");
+  background-image: linear-gradient(to bottom, #c1555552, #24020260), url("../../pictures/page-1/hero-1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.headerWrapper.faq {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c1555552), to(#24020260)), url("../../pictures/page-2/hero-2.jpg");
+  background-image: linear-gradient(to bottom, #c1555552, #24020260), url("../../pictures/page-2/hero-2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.headerWrapper.join {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c1555552), to(#24020260)), url("../../pictures/page-3/hero-3.jpg");
+  background-image: linear-gradient(to bottom, #c1555552, #24020260), url("../../pictures/page-3/hero-3.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .imgWrapper {
@@ -78,6 +117,7 @@ body {
 }
 
 .navigator {
+  z-index: 10;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: navigator;
@@ -150,10 +190,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c1555552), to(#24020260)), url("../../pictures/page-1/hero-1.jpg");
-  background-image: linear-gradient(to bottom, #c1555552, #24020260), url("../../pictures/page-1/hero-1.jpg");
-  background-position: center;
-  background-size: cover;
+}
+
+.startheader__text {
+  z-index: 10;
 }
 
 .startheader__text h1 {
@@ -294,8 +334,8 @@ footer p span {
 }
 
 .navigator {
-  -webkit-transition: all ease-in 1s;
-  transition: all ease-in 1s;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
 }
 
 @media (min-width: 500px) {
@@ -308,8 +348,8 @@ footer p span {
 }
 
 .navigator__logo {
-  -webkit-transition: all ease-in 1s;
-  transition: all ease-in 1s;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
 }
 
 @media (min-width: 500px) {
@@ -320,8 +360,8 @@ footer p span {
 }
 
 .startheader {
-  -webkit-transition: all ease-in 1s;
-  transition: all ease-in 1s;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
 }
 
 @media (min-width: 500px) {
@@ -336,8 +376,8 @@ footer p span {
 }
 
 .startheader__text {
-  -webkit-transition: all ease-in 1s;
-  transition: all ease-in 1s;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
 }
 
 @media (min-width: 500px) {
@@ -348,13 +388,34 @@ footer p span {
 
 @media (min-width: 750px) {
   .startheader__text {
-    padding: 9em 7em 0 0;
+    padding: 7em 7em 0 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .startheader__text {
+    padding: 7em 12em 0 0;
+  }
+}
+
+@media (min-width: 750px) {
+  .startheader__text h1 {
+    font-size: 60px;
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 750px) {
+  .startheader__text p {
+    margin-top: 0.5em;
+    font-size: 30px;
+    max-width: 350px;
   }
 }
 
 .information {
-  -webkit-transition: all ease-in 2s;
-  transition: all ease-in 2s;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
 }
 
 @media (min-width: 500px) {
@@ -367,8 +428,8 @@ footer p span {
 }
 
 .information__picture {
-  -webkit-transition: all ease-in 1s;
-  transition: all ease-in 1s;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
 }
 
 @media (min-width: 500px) {
@@ -393,8 +454,8 @@ footer p span {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-transition: all ease-in 1s;
-  transition: all ease-in 1s;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
 }
 
 @media (min-width: 500px) {
@@ -460,8 +521,8 @@ footer p span {
 }
 
 .readmore {
-  -webkit-transition: all ease-in 1s;
-  transition: all ease-in 1s;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
 }
 
 @media (min-width: 750px) {
@@ -478,8 +539,8 @@ footer p span {
 }
 
 .readmore__mars {
-  -webkit-transition: all ease-in 2s;
-  transition: all ease-in 2s;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
 }
 
 @media (min-width: 500px) {
@@ -519,8 +580,8 @@ footer p span {
 }
 
 .readmore__mars img {
-  -webkit-transition: all ease-in 2s;
-  transition: all ease-in 2s;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
 }
 
 @media (min-width: 500px) {
@@ -533,8 +594,8 @@ footer p span {
 }
 
 .readmore__mars .marsText {
-  -webkit-transition: all ease-in 2s;
-  transition: all ease-in 2s;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
 }
 
 @media (min-width: 500px) {
@@ -571,8 +632,8 @@ footer p span {
 }
 
 .readmore__move {
-  -webkit-transition: all ease-in 1s;
-  transition: all ease-in 1s;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
 }
 
 @media (min-width: 500px) {
@@ -625,8 +686,8 @@ footer p span {
 }
 
 .readmore__sun {
-  -webkit-transition: all ease-in 1s;
-  transition: all ease-in 1s;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
 }
 
 @media (min-width: 500px) {
@@ -665,8 +726,8 @@ footer p span {
 }
 
 .readmore .sunPicture {
-  -webkit-transition: all ease-in 1s;
-  transition: all ease-in 1s;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
 }
 
 @media (min-width: 500px) {
@@ -690,6 +751,11 @@ footer p span {
   .readmore .sunPicture img {
     margin: auto;
   }
+}
+
+footer {
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
 }
 
 @media (min-width: 1000px) {

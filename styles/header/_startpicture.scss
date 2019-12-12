@@ -4,12 +4,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to bottom, #c1555552, #24020260),
-    url("../../pictures/page-1/hero-1.jpg");
-  background-position: center;
-  background-size: cover;
 
   &__text {
+    z-index: 10;
+
     h1 {
       color: white;
       border-bottom: 2px solid white;

@@ -1,13 +1,13 @@
 // Menu and header
 .navigator {
-  transition: all ease-in 1s;
+  transition: all ease-in 0.5s;
 
   @media (min-width: $tabletSize) {
     flex-direction: row;
   }
 
   &__logo {
-    transition: all ease-in 1s;
+    transition: all ease-in 0.5s;
 
     @media (min-width: $tabletSize) {
       margin: unset;
@@ -18,7 +18,7 @@
 
 // Big picture header 
 .startheader {
-  transition: all ease-in 1s;
+  transition: all ease-in 0.5s;
 
   @media (min-width: $tabletSize) {
     justify-content: end;
@@ -26,28 +26,47 @@
   }
 
   &__text {
-    transition: all ease-in 1s;
+    transition: all ease-in 0.5s;
 
     @media (min-width: $tabletSize) {
       padding: 7em 4em 0 0;
     }
 
     @media (min-width: $desktopSize) {
-      padding: 9em 7em 0 0;
+      padding: 7em 7em 0 0;
+    }
+
+    @media (min-width: $bigDesktopSize) {
+      padding: 7em 12em 0 0;
+    }
+
+    h1 {
+      @media (min-width: $desktopSize) {
+        font-size: 60px;
+        max-width: 350px;
+      }
+    }
+
+    p {
+      @media (min-width: $desktopSize) {
+        margin-top: 0.5em;
+        font-size: 30px;
+        max-width: 350px;
+      }
     }
   }
 }
 
 // Information
 .information {
-  transition: all ease-in 2s;
+  transition: all ease-in 0.5s;
 
   @media (min-width: $tabletSize) {
     flex-direction: row;
   }
 
   &__picture {
-    transition: all ease-in 1s;
+    transition: all ease-in 0.5s;
 
     @media (min-width: $tabletSize) {
       margin: unset;
@@ -66,7 +85,7 @@
 
   &__text {
     align-self: center;
-    transition: all ease-in 1s;
+    transition: all ease-in 0.5s;
 
     @media (min-width: $tabletSize) {
       padding: 1em 2em;
@@ -120,7 +139,7 @@
 
 // First section (Why Mars?)
 .readmore {
-  transition: all ease-in 1s;
+  transition: all ease-in 0.5s;
 
   @media (min-width: $desktopSize) {
     display: grid;
@@ -133,7 +152,7 @@
   }
 
   &__mars {
-    transition: all ease-in 2s;
+    transition: all ease-in 0.5s;
 
 
     @media (min-width: $tabletSize) {
@@ -159,7 +178,7 @@
     }
 
     img {
-      transition: all ease-in 2s;
+      transition: all ease-in 0.5s;
 
       @media (min-width: $tabletSize) {
         position: unset;
@@ -170,7 +189,7 @@
     }
 
     .marsText {
-      transition: all ease-in 2s;
+      transition: all ease-in 0.5s;
 
       @media (min-width: $tabletSize) {
         display: flex;
@@ -196,7 +215,7 @@
 .readmore {
 
   &__move {
-    transition: all ease-in 1s;
+    transition: all ease-in 0.5s;
 
     @media (min-width: $tabletSize) {
       text-align: left;
@@ -241,7 +260,7 @@
 .readmore {
 
   &__sun {
-    transition: all ease-in 1s;
+    transition: all ease-in 0.5s;
 
     @media (min-width: $tabletSize) {
       display: grid;
@@ -270,7 +289,7 @@
   }
 
   .sunPicture {
-    transition: all ease-in 1s;
+    transition: all ease-in 0.5s;
 
     @media (min-width: $tabletSize) {
       flex: 1 1 50%;
@@ -295,6 +314,7 @@
 // Footer
 
 footer {
+  transition: all ease-in 0.5s;
 
   p {
     @media (min-width: $bigDesktopSize) {

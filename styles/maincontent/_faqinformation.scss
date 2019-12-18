@@ -84,7 +84,7 @@
     &__animation {
       background-image: radial-gradient(circle at 50% 39%, #072142, #00132c 101%);
       display: grid;
-      min-height: 300px;
+      max-height: 500px;
       height: 100%;
       max-width: 500px;
       width: 100%;

@@ -1,0 +1,208 @@
+.mainFaqPage {
+  transition: all ease-in 0.5s;
+
+  @media (min-width: $desktopSize) {
+    padding: 0;
+  }
+
+  h1 {
+    @media (min-width: $tabletSize) {
+      padding: 1em;
+    }
+
+    @media (min-width: $desktopSize) {
+      grid-column: span 2;
+    }
+  }
+
+  h2 {
+    @media (min-width: $tabletSize) {
+      font-size: 24px;
+      // padding: 0 2em 1em;
+    }
+  }
+}
+
+.faqWrapper {
+  transition: all ease-in 0.5s;
+
+  @media (min-width:$desktopSize) {
+    display: grid;
+    grid-template: auto auto auto / 1fr 1fr;
+    gap: 2em;
+  }
+
+
+  @media (min-width: $bigDesktopSize) {
+    grid-template: 1fr 1fr 1.2fr / 1.3fr 2fr;
+  }
+
+  article {
+    @media (min-width: $desktopSize) {
+      margin-bottom: unset;
+    }
+  }
+
+  h2 {
+    @media (min-width: $desktopSize) {
+      padding: 0 1em 1em;
+      text-align: unset;
+    }
+
+    @media (min-width: $bigDesktopSize) {
+      // padding: 0 4em 1em;
+    }
+  }
+
+  &__why {
+    @media (min-width: $desktopSize) {
+      grid-column: span 2;
+      grid-row: unset;
+    }
+
+    @media (min-width: $bigDesktopSize) {
+      grid-column: unset;
+      padding: 2em 5em 2em 4em;
+      grid-row: span 2;
+      align-self: center;
+    }
+
+    h2 {
+      @media (min-width: $bigDesktopSize) {
+        padding: 1em 0;
+      }
+    }
+
+    p {
+      @media (min-width: $tabletSize) {
+        padding: 0 2em;
+      }
+
+      @media (min-width: $bigDesktopSize) {
+        font-size: 16px;
+        padding: 0;
+      }
+    }
+  }
+
+  &__risks {
+    @media (min-width: $tabletSize) {
+      padding: 2em 4em;
+    }
+
+    @media (min-width: $desktopSize) {
+      padding: 2em 3em;
+    }
+
+    @media (min-width: $bigDesktopSize) {
+      font-size: 16px;
+      padding: 2em 5em;
+    }
+
+    h2 {
+      @media (min-width: $desktopSize) {
+        padding: 0.7em 0;
+      }
+    }
+
+    @media (min-width: $bigDesktopSize) {
+      padding: 3.5em 4em;
+    }
+  }
+
+  &__events {
+    @media (min-width: $desktopSize) {
+      grid-template-rows: 1fr 1fr;
+    }
+
+    @media (min-width: $bigDesktopSize) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: unset;
+    }
+
+    img {
+      @media (min-width: $desktopSize) {
+        height: 100%;
+      }
+    }
+
+    &__text {
+      @media (min-width: $tabletSize) {
+        padding: 1.5em 3em;
+      }
+
+      @media (min-width: $desktopSize) {
+        padding: 2em 3em;
+      }
+
+      @media (min-width: $bigDesktopSize) {
+        align-self: center;
+        padding: 0 5em;
+      }
+
+      h2 {
+        @media (min-width: $desktopSize) {
+          padding: 0.5em 0;
+        }
+      }
+    }
+  }
+
+  &__traveltime {
+    @media (min-width: $desktopSize) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column: span 2;
+    }
+
+    @media (min-width: $bigDesktopSize) {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    &__text {
+      @media (min-width: $desktopSize) {
+        align-self: center;
+        order: 1;
+        align-self: center;
+      }
+
+      @media (min-width: $bigDesktopSize) {
+        padding: 0 8em 0 4em;
+      }
+
+      h2 {
+        @media (min-width: $desktopSize) {
+          padding: 0 1em 1em;
+        }
+      }
+
+      p {
+        @media (min-width: $tabletSize) {
+          padding: 0 2em;
+        }
+
+        @media (min-width: $bigDesktopSize) {
+          padding: 0;
+        }
+      }
+    }
+
+    &__animation {
+      @media (min-width: $tabletSize) {
+        width: 100%;
+        max-width: unset;
+        min-height: 300px;
+      }
+
+      @media (min-width: $desktopSize) {
+        max-height: 400px;
+      }
+
+      @media (min-width: $bigDesktopSize) {
+        max-width: 500px;
+        max-height: 500px;
+      }
+    }
+  }
+}

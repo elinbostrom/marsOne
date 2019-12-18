@@ -1,62 +1,3 @@
-// Menu and header
-.navigator {
-  transition: all ease-in 0.5s;
-
-  @media (min-width: $tabletSize) {
-    flex-direction: row;
-  }
-
-  &__logo {
-    transition: all ease-in 0.5s;
-
-    @media (min-width: $tabletSize) {
-      margin: unset;
-      margin-right: auto;
-    }
-  }
-}
-
-// Big picture header 
-.startheader {
-  transition: all ease-in 0.5s;
-
-  @media (min-width: $tabletSize) {
-    justify-content: end;
-    align-items: start;
-  }
-
-  &__text {
-    transition: all ease-in 0.5s;
-
-    @media (min-width: $tabletSize) {
-      padding: 7em 4em 0 0;
-    }
-
-    @media (min-width: $desktopSize) {
-      padding: 7em 7em 0 0;
-    }
-
-    @media (min-width: $bigDesktopSize) {
-      padding: 7em 12em 0 0;
-    }
-
-    h1 {
-      @media (min-width: $desktopSize) {
-        font-size: 60px;
-        max-width: 350px;
-      }
-    }
-
-    p {
-      @media (min-width: $desktopSize) {
-        margin-top: 0.5em;
-        font-size: 30px;
-        max-width: 350px;
-      }
-    }
-  }
-}
-
 // Information
 .information {
   transition: all ease-in 0.5s;
@@ -308,17 +249,5 @@
       }
     }
 
-  }
-}
-
-// Footer
-
-footer {
-  transition: all ease-in 0.5s;
-
-  p {
-    @media (min-width: $bigDesktopSize) {
-      width: unset;
-    }
   }
 }

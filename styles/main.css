@@ -44,6 +44,37 @@
   width: 120px;
 }
 
+.inputform label {
+  display: -ms-grid;
+  display: grid;
+  color: #2c4f80;
+  font-weight: bold;
+  margin: 0.5em;
+  font-size: 14px;
+  margin-bottom: 0.4em;
+}
+
+.inputform label input {
+  padding-left: 0.8em;
+  color: gray;
+  font-weight: 400;
+}
+
+.inputform label input[value] {
+  color: gray;
+  padding-left: 0.8em;
+  font-weight: 400;
+}
+
+.inputform label input,
+.inputform label textarea {
+  border-radius: 5px;
+  border: 1px solid #2c4f80;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #2c4f80;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -114,6 +145,11 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
+}
+
+.inputformWrapper {
+  max-width: 1200px;
+  width: 90vw;
 }
 
 .navigator {
@@ -331,86 +367,6 @@ footer p {
 
 footer p span {
   color: #e32700;
-}
-
-.navigator {
-  -webkit-transition: all ease-in 0.5s;
-  transition: all ease-in 0.5s;
-}
-
-@media (min-width: 500px) {
-  .navigator {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-.navigator__logo {
-  -webkit-transition: all ease-in 0.5s;
-  transition: all ease-in 0.5s;
-}
-
-@media (min-width: 500px) {
-  .navigator__logo {
-    margin: unset;
-    margin-right: auto;
-  }
-}
-
-.startheader {
-  -webkit-transition: all ease-in 0.5s;
-  transition: all ease-in 0.5s;
-}
-
-@media (min-width: 500px) {
-  .startheader {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-  }
-}
-
-.startheader__text {
-  -webkit-transition: all ease-in 0.5s;
-  transition: all ease-in 0.5s;
-}
-
-@media (min-width: 500px) {
-  .startheader__text {
-    padding: 7em 4em 0 0;
-  }
-}
-
-@media (min-width: 750px) {
-  .startheader__text {
-    padding: 7em 7em 0 0;
-  }
-}
-
-@media (min-width: 1000px) {
-  .startheader__text {
-    padding: 7em 12em 0 0;
-  }
-}
-
-@media (min-width: 750px) {
-  .startheader__text h1 {
-    font-size: 60px;
-    max-width: 350px;
-  }
-}
-
-@media (min-width: 750px) {
-  .startheader__text p {
-    margin-top: 0.5em;
-    font-size: 30px;
-    max-width: 350px;
-  }
 }
 
 .information {
@@ -761,6 +717,221 @@ footer {
 @media (min-width: 1000px) {
   footer p {
     width: unset;
+  }
+}
+
+.navigator {
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
+}
+
+@media (min-width: 500px) {
+  .navigator {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.navigator__logo {
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
+}
+
+@media (min-width: 500px) {
+  .navigator__logo {
+    margin: unset;
+    margin-right: auto;
+  }
+}
+
+.startheader {
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
+}
+
+@media (min-width: 500px) {
+  .startheader {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
+.startheader__text {
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
+}
+
+@media (min-width: 500px) {
+  .startheader__text {
+    padding: 7em 4em 0 0;
+  }
+}
+
+@media (min-width: 750px) {
+  .startheader__text {
+    padding: 7em 7em 0 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .startheader__text {
+    padding: 7em 12em 0 0;
+  }
+}
+
+@media (min-width: 750px) {
+  .startheader__text h1 {
+    font-size: 60px;
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 750px) {
+  .startheader__text p {
+    margin-top: 0.5em;
+    font-size: 30px;
+    max-width: 350px;
+  }
+}
+
+.mainJoinPage {
+  background: #f1f1f1;
+  margin: auto;
+  padding: 1em 1em 2em 1em;
+}
+
+.joinus {
+  padding: 1.5em 0;
+  text-align: center;
+  max-width: 480px;
+  width: 80vw;
+  margin: auto;
+}
+
+.joinus h2 {
+  color: #e32700;
+  font-size: 22px;
+  margin-bottom: 0.2em;
+}
+
+.joinus p {
+  color: #2c4f80;
+  font-size: 14px;
+}
+
+.inputform {
+  background: white;
+  display: -ms-grid;
+  display: grid;
+  padding: 2em;
+  -webkit-box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
+          box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
+}
+
+.inputform__submitbutton {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1em;
+}
+
+.inputform__submitbutton button {
+  height: 30px;
+  background: white;
+  width: 150px;
+  color: #2c4f80;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #2c4f80;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mainJoinPage {
+  -webkit-transition: all ease-in 1s;
+  transition: all ease-in 1s;
+}
+
+@media (min-width: 750px) {
+  .mainJoinPage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.joinus {
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
+}
+
+@media (min-width: 750px) {
+  .joinus {
+    padding: 5em 0;
+  }
+}
+
+@media (min-width: 500px) {
+  .joinus h2 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 750px) {
+  .joinus h2 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 500px) {
+  .joinus p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 750px) {
+  .joinus p {
+    font-size: 24px;
+  }
+}
+
+.inputform {
+  -webkit-transition: all ease-in 1s;
+  transition: all ease-in 1s;
+}
+
+@media (min-width: 750px) {
+  .inputform {
+    -ms-grid-rows: 0.8fr 0.8fr 3fr auto;
+    -ms-grid-columns: 1fr 1fr 0.5fr;
+        grid-template: 0.8fr 0.8fr 3fr auto / 1fr 1fr 0.5fr;
+  }
+}
+
+@media (min-width: 750px) {
+  .inputform__motivation {
+    grid-column: span 3;
+    line-height: 2em;
+  }
+}
+
+@media (min-width: 750px) {
+  .inputform__submitbutton {
+    grid-column: span 3;
   }
 }
 /*# sourceMappingURL=main.css.map */

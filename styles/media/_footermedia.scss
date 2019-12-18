@@ -1,0 +1,11 @@
+// Footer
+
+footer {
+  transition: all ease-in 0.5s;
+
+  p {
+    @media (min-width: $bigDesktopSize) {
+      width: unset;
+    }
+  }
+}

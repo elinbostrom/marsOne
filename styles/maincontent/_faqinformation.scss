@@ -1,0 +1,150 @@
+.mainFaqPage {
+  background: $grey-background;
+  padding: 1em;
+
+  h1 {
+    text-align: center;
+    color: $blue-text;
+    padding: 1.5em 0;
+  }
+
+}
+
+.faqWrapper {
+
+  h2 {
+    color: $red-text;
+    font-weight: 400;
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  article {
+    margin-bottom: 1em;
+    background: white;
+  }
+
+  &__why {
+    padding: 2em;
+
+    p {
+      margin-bottom: 2em;
+    }
+  }
+
+  &__risks {
+    padding: 2em;
+    font-size: 12px;
+
+    ul {
+      padding: 1em;
+      list-style: none;
+    }
+
+    ul li::before {
+      content: '\2022';
+      color: $red-text;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    li {
+      padding-left: 1em;
+      margin-bottom: 0.5em;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+
+  &__events {
+    display: grid;
+
+    &__text {
+      padding: 1.5em;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__traveltime {
+
+    &__text {
+      padding: 1.5em;
+    }
+
+    &__animation {
+      background-image: radial-gradient(circle at 50% 39%, #072142, #00132c 101%);
+      display: grid;
+      min-height: 300px;
+      height: 100%;
+      max-width: 500px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sunAnimation,
+    .marsAnimation,
+    .earthAnimation {
+      grid-column: 1;
+      grid-row: 1;
+      display: grid;
+    }
+
+    .sunAnimation {
+      display: grid;
+      place-self: center;
+
+      img {
+        @extend %centergrid;
+        width: 50px;
+      }
+    }
+
+    .line {
+      @extend %centergrid;
+      border-radius: 100%;
+      animation: move-planet linear infinite;
+    }
+
+    .earthAnimation {
+      place-self: center;
+
+      &.line {
+        width: 10em;
+        height: 10em;
+        animation-duration: 10s;
+      }
+
+      img {
+        justify-self: center;
+        align-self: end;
+        width: 18px;
+      }
+    }
+
+    .marsAnimation {
+      place-self: center;
+
+      &.line {
+        width: 14em;
+        height: 14em;
+        animation-duration: 15s;
+      }
+
+      img {
+        justify-self: center;
+        width: 20px;
+      }
+    }
+  }
+}

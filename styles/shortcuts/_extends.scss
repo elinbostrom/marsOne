@@ -67,3 +67,8 @@
     color: $blue-text;
   }
 }
+
+%centergrid {
+  grid-column: 1;
+  grid-row: 1;
+}

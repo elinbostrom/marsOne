@@ -1,13 +1,27 @@
+// Hjälpmedel
 @import 'shortcuts/variables';
 @import 'shortcuts/extends';
 @import 'shortcuts/mixins';
 @import 'shortcuts/wrappers';
+@import 'shortcuts/animations';
+
+// Header
 @import 'header/navigator';
 @import 'header/startpicture';
-@import 'maincontent/startinformation';
-@import 'footer/footer';
-@import 'media/startpage';
-@import 'media/footermedia';
 @import 'media/headermedia';
+
+// Footer
+@import 'footer/footer';
+@import 'media/footermedia';
+
+// First page
+@import 'maincontent/startinformation';
+@import 'media/startpage';
+
+// Second page
+@import 'maincontent/faqinformation';
+@import 'media/faqmedia';
+
+// Third page
 @import 'maincontent/joininformation';
 @import 'media/joinusmedia';

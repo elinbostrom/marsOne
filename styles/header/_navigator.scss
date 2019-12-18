@@ -10,10 +10,16 @@
 
   a {
     text-decoration: none;
-    padding: 0.5em;
+    padding: 0;
     font-size: 12px;
     font-weight: bold;
     color: $headline-color;
+  }
+
+  a:hover {
+    @include hoverState($navigator-background);
+    font-size: 14px;
+    border-bottom: 1.5px solid $red-text;
   }
 
   &__logo {

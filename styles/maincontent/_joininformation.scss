@@ -21,14 +21,13 @@
     color: $blue-text;
     font-size: 14px;
   }
-
 }
 
 .inputform {
   background: white;
   display: grid;
   padding: 2em;
-  box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
+  box-shadow: $shadow;
 
   label {
     @extend %inputinformation;
@@ -48,6 +47,10 @@
       border-radius: 5px;
       border: 1px solid $blue-text;
       font-family: 'Montserrat', sans-serif;
+    }
+
+    button:hover {
+      @include hoverState($blue-text);
     }
   }
 

@@ -2,3 +2,13 @@
   height: $size;
   width: $size;
 }
+
+@mixin hoverState($bcolor) {
+  cursor: pointer;
+  transition: transform 0.5s;
+  transition-delay: 0.1s;
+  transform: scale(1.1);
+  animation-direction: alternate;
+  color: white;
+  background: $bcolor;
+}

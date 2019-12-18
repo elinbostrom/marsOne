@@ -36,6 +36,10 @@
     height: 30px;
     width: 120px;
   }
+
+  button:hover {
+    @include hoverState($blue-text);
+  }
 }
 
 %inputinformation {
@@ -50,6 +54,7 @@
     padding-left: 0.8em;
     color: gray;
     font-weight: 400;
+    height: 25px;
   }
 
   input[value] {

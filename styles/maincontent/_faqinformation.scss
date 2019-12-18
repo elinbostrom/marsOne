@@ -30,6 +30,7 @@
   }
 
   &__why {
+    box-shadow: $shadow;
     padding: 2em;
 
     p {
@@ -38,6 +39,7 @@
   }
 
   &__risks {
+    box-shadow: $shadow;
     padding: 2em;
     font-size: 12px;
 
@@ -64,6 +66,7 @@
   }
 
   &__events {
+    box-shadow: $shadow;
     display: grid;
 
     &__text {
@@ -76,6 +79,7 @@
   }
 
   &__traveltime {
+    box-shadow: $shadow;
 
     &__text {
       padding: 1.5em;

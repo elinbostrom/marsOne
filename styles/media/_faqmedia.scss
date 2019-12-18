@@ -34,12 +34,13 @@
 
 
   @media (min-width: $bigDesktopSize) {
-    grid-template: 1fr 1fr 1.2fr / 1.3fr 2fr;
+    grid-template: 1fr 1fr 1fr / 1.3fr 2fr;
   }
 
   article {
     @media (min-width: $desktopSize) {
       margin-bottom: unset;
+      box-shadow: unset;
     }
   }
 
@@ -51,6 +52,12 @@
 
     @media (min-width: $bigDesktopSize) {
       // padding: 0 4em 1em;
+    }
+  }
+
+  p {
+    @media (min-width: $bigDesktopSize) {
+      font-size: 16px;
     }
   }
 
@@ -104,15 +111,11 @@
         padding: 0.7em 0;
       }
     }
-
-    @media (min-width: $bigDesktopSize) {
-      padding: 3.5em 4em;
-    }
   }
 
   &__events {
     @media (min-width: $desktopSize) {
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: auto 1fr;
     }
 
     @media (min-width: $bigDesktopSize) {
@@ -152,7 +155,7 @@
   &__traveltime {
     @media (min-width: $desktopSize) {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1.5fr;
       grid-column: span 2;
     }
 
@@ -173,7 +176,11 @@
 
       h2 {
         @media (min-width: $desktopSize) {
-          padding: 0 1em 1em;
+          padding: 0 1em 1em 1em;
+        }
+
+        @media (min-width: $bigDesktopSize) {
+          padding: 0 1em 1em 0;
         }
       }
 

@@ -2,11 +2,14 @@
   grid-area: headerPicture;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
 
   &__text {
     z-index: 10;
+    padding-bottom: 3.5em;
+    padding-left: 2em;
 
     h1 {
       color: white;
@@ -17,8 +20,70 @@
       color: $blue-text;
       font-weight: bold;
       max-width: 300px;
-      width: 80vw;
     }
   }
 
+  &.startpage {
+    background-image: linear-gradient(to bottom, #c1555552, #24020260),
+      url("../../pictures/page-1/hero-1.jpg");
+    background-position: center;
+    background-size: cover;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 130vw;
+      height: 100vw;
+      border-radius: 100%;
+      border: 20px solid $headline-text;
+      border-inline-start: 5px;
+      border-inline-end: 5px;
+      background: linear-gradient(182deg, #00132c 61%, rgba(21, 52, 98, 0.9));
+      bottom: 15em;
+      left: -10vw;
+    }
+  }
+
+  &.faq {
+    background-image: linear-gradient(to bottom, #c1555552, #24020260),
+      url("../../pictures/page-2/hero-2.jpg");
+    background-position: center;
+    background-size: cover;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 130vw;
+      height: 100vw;
+      border-radius: 100%;
+      border: 20px solid $headline-text;
+      border-inline-start: 5px;
+      border-inline-end: 5px;
+      background: linear-gradient(182deg, #00132c 61%, rgba(21, 52, 98, 0.9));
+      bottom: 15em;
+      left: -10vw;
+    }
+  }
+
+
+  &.join {
+    background-image: linear-gradient(to bottom, #c1555552, #24020260),
+      url("../../pictures/page-3/hero-3.jpg");
+    background-position: center;
+    background-size: cover;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 170vw;
+      height: 100vw;
+      border-radius: 100%;
+      border: 20px solid $headline-text;
+      border-inline-start: 5px;
+      border-inline-end: 5px;
+      background: linear-gradient(182deg, #00132cd7 61%, rgba(21, 52, 98, 0.842));
+      top: 20em;
+      right: -25vw;
+    }
+  }
 }

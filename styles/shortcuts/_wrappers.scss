@@ -11,49 +11,14 @@ body {
 
 .headerWrapper {
   display: grid;
-  height: 100vh;
+  min-height: 300px;
+  height: 70vh;
   grid-template-rows: auto 1fr;
   grid-template-areas:
     "navigator"
     "headerPicture";
   overflow: hidden;
   position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 130vw;
-    height: 100vw;
-    border-radius: 100%;
-    border: 20px solid $headline-text;
-    border-inline-start: 5px;
-    border-inline-end: 5px;
-    background: linear-gradient(182deg, #00132c 61%, rgba(21, 52, 98, 0.9));
-    bottom: 15em;
-    left: -10vw;
-  }
-
-  &.startpage {
-    background-image: linear-gradient(to bottom, #c1555552, #24020260),
-      url("../../pictures/page-1/hero-1.jpg");
-    background-position: center;
-    background-size: cover;
-  }
-
-  &.faq {
-    background-image: linear-gradient(to bottom, #c1555552, #24020260),
-      url("../../pictures/page-2/hero-2.jpg");
-    background-position: center;
-    background-size: cover;
-  }
-
-  &.join {
-    background-image: linear-gradient(to bottom, #c1555552, #24020260),
-      url("../../pictures/page-3/hero-3.jpg");
-    background-position: center;
-    background-size: cover;
-  }
-
 }
 
 

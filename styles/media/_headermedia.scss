@@ -7,7 +7,7 @@
   }
 
   &__menubar__item {
-    transition: all ease-in 0.5;
+    transition: all ease-in 0.5s;
 
     @media (min-width: $tabletSize) {
       margin: 0 1em;

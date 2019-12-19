@@ -77,3 +77,23 @@
   grid-column: 1;
   grid-row: 1;
 }
+
+%ovalDesign {
+  content: "";
+  position: absolute;
+  width: 170vw;
+  height: 100vw;
+  border-radius: 100%;
+  border: 20px solid $headline-text;
+  border-inline-start: 15px;
+  border-inline-end: 15px;
+  background: rgb(21, 52, 98);
+  background: linear-gradient(0deg, rgba(21, 52, 98, 1) 0%, rgba(0, 19, 44, 1) 35%);
+  bottom: 50vh;
+  left: -5vw;
+  transform: scale(1.1) rotateZ(-4deg);
+
+  @media (min-width: $desktopSize) {
+    bottom: 40vh;
+  }
+}

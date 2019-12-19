@@ -99,6 +99,32 @@
   grid-row: 1;
 }
 
+.startheader.startpage::after, .startheader.faq::after {
+  content: "";
+  position: absolute;
+  width: 170vw;
+  height: 100vw;
+  border-radius: 100%;
+  border: 20px solid #436dac;
+  -webkit-border-start: 15px;
+          border-inline-start: 15px;
+  -webkit-border-end: 15px;
+          border-inline-end: 15px;
+  background: #153462;
+  background: -webkit-gradient(linear, left bottom, left top, from(#153462), color-stop(35%, #00132c));
+  background: linear-gradient(0deg, #153462 0%, #00132c 35%);
+  bottom: 50vh;
+  left: -5vw;
+  -webkit-transform: scale(1.1) rotateZ(-4deg);
+          transform: scale(1.1) rotateZ(-4deg);
+}
+
+@media (min-width: 750px) {
+  .startheader.startpage::after, .startheader.faq::after {
+    bottom: 40vh;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -277,63 +303,11 @@ body {
   background-size: cover;
 }
 
-.startheader.startpage::after {
-  content: "";
-  position: absolute;
-  width: 170vw;
-  height: 100vw;
-  border-radius: 100%;
-  border: 20px solid #436dac;
-  -webkit-border-start: 15px;
-          border-inline-start: 15px;
-  -webkit-border-end: 15px;
-          border-inline-end: 15px;
-  background: #153462;
-  background: -webkit-gradient(linear, left bottom, left top, from(#153462), color-stop(35%, #00132c));
-  background: linear-gradient(0deg, #153462 0%, #00132c 35%);
-  bottom: 50vh;
-  left: -5vw;
-  -webkit-transform: scale(1.1) rotateZ(-4deg);
-          transform: scale(1.1) rotateZ(-4deg);
-}
-
-@media (min-width: 750px) {
-  .startheader.startpage::after {
-    bottom: 40vh;
-  }
-}
-
 .startheader.faq {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#c15555c5), to(#240202c9)), url("../../pictures/page-2/hero-2.jpg");
   background-image: linear-gradient(to bottom, #c15555c5, #240202c9), url("../../pictures/page-2/hero-2.jpg");
   background-position: center;
   background-size: cover;
-}
-
-.startheader.faq::after {
-  content: "";
-  position: absolute;
-  width: 170vw;
-  height: 100vw;
-  border-radius: 100%;
-  border: 20px solid #436dac;
-  -webkit-border-start: 15px;
-          border-inline-start: 15px;
-  -webkit-border-end: 15px;
-          border-inline-end: 15px;
-  background: #153462;
-  background: -webkit-gradient(linear, left bottom, left top, from(#153462), color-stop(35%, #00132c));
-  background: linear-gradient(0deg, #153462 0%, #00132c 35%);
-  bottom: 50vh;
-  left: -5vw;
-  -webkit-transform: scale(1.1) rotateZ(-4deg);
-          transform: scale(1.1) rotateZ(-4deg);
-}
-
-@media (min-width: 750px) {
-  .startheader.faq::after {
-    bottom: 40vh;
-  }
 }
 
 .startheader.join {
@@ -390,8 +364,8 @@ body {
 }
 
 .navigator__menubar__item {
-  -webkit-transition: all ease-in 0.5;
-  transition: all ease-in 0.5;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
 }
 
 @media (min-width: 500px) {
@@ -577,6 +551,7 @@ footer {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  background-color: white;
 }
 
 .information__picture {

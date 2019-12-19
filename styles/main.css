@@ -1247,9 +1247,6 @@ footer {
     grid-column: unset;
     padding: 2em 5em 2em 4em;
     grid-row: span 2;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
   }
 }
 

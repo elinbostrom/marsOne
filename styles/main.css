@@ -262,12 +262,10 @@ body {
 }
 
 .startheader__text h1 {
-  font-size: 30px;
   color: white;
 }
 
 .startheader__text p {
-  font-size: 18px;
   color: #2c4f80;
   font-weight: bold;
 }
@@ -471,6 +469,12 @@ body {
   }
 }
 
+@media (min-width: 350px) {
+  .startheader__text h1 {
+    font-size: 30px;
+  }
+}
+
 @media (min-width: 500px) {
   .startheader__text h1 {
     font-size: 40px;
@@ -486,6 +490,12 @@ body {
 @media (min-width: 1100px) {
   .startheader__text h1 {
     font-size: 60px;
+  }
+}
+
+@media (min-width: 350px) {
+  .startheader__text p {
+    font-size: 18px;
   }
 }
 

@@ -6,6 +6,12 @@
   align-items: end;
   justify-content: start;
 
+  &__headlineWrapper {
+    border-bottom: 4px solid white;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
   &__joinHeadline {
     padding-bottom: 2em;
     padding-left: 2em;
@@ -15,11 +21,9 @@
     z-index: 10;
     padding: 2em 2em 0 0;
 
-
     h1 {
       font-size: 30px;
       color: white;
-      border-bottom: 2px solid white;
     }
 
     p {
@@ -44,7 +48,8 @@
       border: 20px solid $headline-text;
       border-inline-start: 15px;
       border-inline-end: 15px;
-      background: linear-gradient(182deg, #00132c 61%, rgb(21, 52, 98));
+      background: rgb(21, 52, 98);
+      background: linear-gradient(0deg, rgba(21, 52, 98, 1) 0%, rgba(0, 19, 44, 1) 35%);
       bottom: 50vh;
       left: -5vw;
       transform: scale(1.1) rotateZ(-4deg);
@@ -70,7 +75,8 @@
       border: 20px solid $headline-text;
       border-inline-start: 15px;
       border-inline-end: 15px;
-      background: linear-gradient(182deg, #00132c 61%, rgb(21, 52, 98));
+      background: rgb(21, 52, 98);
+      background: linear-gradient(0deg, rgba(21, 52, 98, 1) 0%, rgba(0, 19, 44, 1) 35%);
       bottom: 50vh;
       left: -5vw;
       transform: scale(1.1) rotateZ(-4deg);
@@ -100,7 +106,8 @@
       border: 20px solid $headline-text;
       border-inline-start: 15px;
       border-inline-end: 15px;
-      background: linear-gradient(182deg, #00132c 61%, rgb(21, 52, 98));
+      background: rgb(0, 19, 44);
+      background: linear-gradient(0deg, rgba(0, 19, 44, 1) 63%, rgba(21, 52, 98, 0.961) 100%);
       top: 70vh;
       right: -5vw;
       transform: scale(1.1) rotateZ(-4deg);

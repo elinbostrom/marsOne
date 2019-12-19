@@ -252,6 +252,12 @@ body {
           justify-content: start;
 }
 
+.startheader__headlineWrapper {
+  border-bottom: 4px solid white;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 .startheader__joinHeadline {
   padding-bottom: 2em;
   padding-left: 2em;
@@ -265,7 +271,6 @@ body {
 .startheader__text h1 {
   font-size: 30px;
   color: white;
-  border-bottom: 2px solid white;
 }
 
 .startheader__text p {
@@ -292,7 +297,9 @@ body {
           border-inline-start: 15px;
   -webkit-border-end: 15px;
           border-inline-end: 15px;
-  background: linear-gradient(182deg, #00132c 61%, #153462);
+  background: #153462;
+  background: -webkit-gradient(linear, left bottom, left top, from(#153462), color-stop(35%, #00132c));
+  background: linear-gradient(0deg, #153462 0%, #00132c 35%);
   bottom: 50vh;
   left: -5vw;
   -webkit-transform: scale(1.1) rotateZ(-4deg);
@@ -323,7 +330,9 @@ body {
           border-inline-start: 15px;
   -webkit-border-end: 15px;
           border-inline-end: 15px;
-  background: linear-gradient(182deg, #00132c 61%, #153462);
+  background: #153462;
+  background: -webkit-gradient(linear, left bottom, left top, from(#153462), color-stop(35%, #00132c));
+  background: linear-gradient(0deg, #153462 0%, #00132c 35%);
   bottom: 50vh;
   left: -5vw;
   -webkit-transform: scale(1.1) rotateZ(-4deg);
@@ -360,7 +369,9 @@ body {
           border-inline-start: 15px;
   -webkit-border-end: 15px;
           border-inline-end: 15px;
-  background: linear-gradient(182deg, #00132c 61%, #153462);
+  background: #00132c;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(63%, #00132c), to(rgba(21, 52, 98, 0.961)));
+  background: linear-gradient(0deg, #00132c 63%, rgba(21, 52, 98, 0.961) 100%);
   top: 70vh;
   right: -5vw;
   -webkit-transform: scale(1.1) rotateZ(-4deg);
@@ -538,6 +549,12 @@ footer p span {
 footer {
   -webkit-transition: all ease-in 0.5s;
   transition: all ease-in 0.5s;
+}
+
+@media (min-width: 750px) {
+  footer {
+    padding: 3em 2em;
+  }
 }
 
 @media (min-width: 1100px) {

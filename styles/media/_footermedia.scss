@@ -3,6 +3,10 @@
 footer {
   transition: all ease-in 0.5s;
 
+  @media (min-width: $desktopSize) {
+    padding: 3em 2em;
+  }
+
   p {
     @media (min-width: $bigDesktopSize) {
       width: unset;

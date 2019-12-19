@@ -65,7 +65,9 @@
     }
 
     button:hover {
-      @include hoverState($blue-text);
+      @media (min-width: $desktopSize) {
+        @include hoverState($blue-text);
+      }
     }
   }
 

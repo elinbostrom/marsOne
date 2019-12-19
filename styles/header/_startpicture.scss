@@ -87,8 +87,8 @@
 
 
   &.join {
-    align-items: start;
-    justify-content: end;
+    align-items: flex-end;
+    justify-content: flex-end;
 
     background-image: linear-gradient(to top, #c15555c7, #240202dc),
       url("../../pictures/page-3/hero-3.jpg");

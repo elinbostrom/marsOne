@@ -34,11 +34,11 @@
     }
 
     @media (min-width: $desktopSize) {
-      padding: 0 0 4em 7em;
+      padding: 0 0 4em 6em;
     }
 
     @media (min-width: $bigDesktopSize) {
-      padding: 0 0 4em 10em;
+      padding: 0 0 4em 9em;
     }
   }
 
@@ -46,11 +46,11 @@
     transition: all ease-in 0.5s;
 
     @media (min-width: $tabletSize) {
-      padding: 4em 3em 0 0;
+      padding: 3em 3em 0 0;
     }
 
     @media (min-width: $desktopSize) {
-      padding: 5em 5em 0 0;
+      padding: 4em 4em 0 0;
     }
 
     @media (min-width: $bigDesktopSize) {

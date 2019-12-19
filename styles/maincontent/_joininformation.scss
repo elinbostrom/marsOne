@@ -26,11 +26,26 @@
 .inputform {
   background: white;
   display: grid;
-  padding: 2em;
+  padding: 1em;
   box-shadow: $shadow;
+  grid-template-columns: 80vw;
 
   label {
     @extend %inputinformation;
+    max-width: 80vw;
+
+    input {
+      width: 100%;
+    }
+  }
+
+  &__motivation {
+    max-width: 80vw;
+
+    textarea {
+      // max-width: 80vw;
+      width: 100%;
+    }
   }
 
   &__submitbutton {

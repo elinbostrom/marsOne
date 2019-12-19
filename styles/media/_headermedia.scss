@@ -28,34 +28,49 @@
 .startheader {
   transition: all ease-in 0.5s;
 
-  @media (min-width: $tabletSize) {
-    justify-content: end;
-    align-items: start;
+  &__joinHeadline {
+    @media (min-width: $tabletSize) {
+      padding: 0 0 2em 4em;
+    }
+
+    @media (min-width: $desktopSize) {
+      padding: 0 0 4em 7em;
+    }
+
+    @media (min-width: $bigDesktopSize) {
+      padding: 0 0 4em 10em;
+    }
   }
 
   &__text {
     transition: all ease-in 0.5s;
 
     @media (min-width: $tabletSize) {
-      padding: 7em 4em 0 0;
+      padding: 4em 3em 0 0;
     }
 
     @media (min-width: $desktopSize) {
-      padding: 7em 7em 0 0;
+      padding: 5em 5em 0 0;
     }
 
     @media (min-width: $bigDesktopSize) {
-      padding: 7em 12em 0 0;
+      padding: 7em 7em 0 0;
+    }
+
+    &__joinHeadline {
+      @media (min-width: $tabletSize) {
+        justify-content: end;
+        align-items: start;
+      }
     }
 
     h1 {
       @media (min-width: $tabletSize) {
-        font-size: 30px;
+        font-size: 40px;
       }
 
       @media (min-width: $desktopSize) {
-        font-size: 40px;
-        max-width: 350px;
+        font-size: 50px;
       }
 
       @media (min-width: $bigDesktopSize) {
@@ -71,8 +86,13 @@
       @media (min-width: $desktopSize) {
         margin-top: 0.5em;
         font-size: 30px;
-        max-width: 350px;
       }
+    }
+  }
+
+  &.join {
+    @media (min-width: $desktopSize) {
+      background-position: unset;
     }
   }
 }

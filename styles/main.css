@@ -114,7 +114,7 @@ body {
   display: -ms-grid;
   display: grid;
   min-height: 300px;
-  height: 70vh;
+  height: 100vh;
   -ms-grid-rows: auto 1fr;
       grid-template-rows: auto 1fr;
       grid-template-areas: "navigator" "headerPicture";
@@ -244,29 +244,34 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.startheader__joinHeadline {
+  padding-bottom: 2em;
+  padding-left: 2em;
 }
 
 .startheader__text {
   z-index: 10;
-  padding-bottom: 3.5em;
-  padding-left: 2em;
+  padding: 2em 2em 0 0;
 }
 
 .startheader__text h1 {
+  font-size: 30px;
   color: white;
   border-bottom: 2px solid white;
 }
 
 .startheader__text p {
+  font-size: 18px;
   color: #2c4f80;
   font-weight: bold;
-  max-width: 300px;
 }
 
 .startheader.startpage {
@@ -279,22 +284,30 @@ body {
 .startheader.startpage::after {
   content: "";
   position: absolute;
-  width: 130vw;
+  width: 170vw;
   height: 100vw;
   border-radius: 100%;
   border: 20px solid #436dac;
-  -webkit-border-start: 5px;
-          border-inline-start: 5px;
-  -webkit-border-end: 5px;
-          border-inline-end: 5px;
-  background: linear-gradient(182deg, #00132c 61%, rgba(21, 52, 98, 0.9));
-  bottom: 15em;
-  left: -10vw;
+  -webkit-border-start: 15px;
+          border-inline-start: 15px;
+  -webkit-border-end: 15px;
+          border-inline-end: 15px;
+  background: linear-gradient(182deg, #00132c 61%, #153462);
+  bottom: 50vh;
+  left: -5vw;
+  -webkit-transform: scale(1.1) rotateZ(-4deg);
+          transform: scale(1.1) rotateZ(-4deg);
+}
+
+@media (min-width: 750px) {
+  .startheader.startpage::after {
+    bottom: 40vh;
+  }
 }
 
 .startheader.faq {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c1555552), to(#24020260)), url("../../pictures/page-2/hero-2.jpg");
-  background-image: linear-gradient(to bottom, #c1555552, #24020260), url("../../pictures/page-2/hero-2.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c15555c5), to(#240202c9)), url("../../pictures/page-2/hero-2.jpg");
+  background-image: linear-gradient(to bottom, #c15555c5, #240202c9), url("../../pictures/page-2/hero-2.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -302,22 +315,36 @@ body {
 .startheader.faq::after {
   content: "";
   position: absolute;
-  width: 130vw;
+  width: 170vw;
   height: 100vw;
   border-radius: 100%;
   border: 20px solid #436dac;
-  -webkit-border-start: 5px;
-          border-inline-start: 5px;
-  -webkit-border-end: 5px;
-          border-inline-end: 5px;
-  background: linear-gradient(182deg, #00132c 61%, rgba(21, 52, 98, 0.9));
-  bottom: 15em;
-  left: -10vw;
+  -webkit-border-start: 15px;
+          border-inline-start: 15px;
+  -webkit-border-end: 15px;
+          border-inline-end: 15px;
+  background: linear-gradient(182deg, #00132c 61%, #153462);
+  bottom: 50vh;
+  left: -5vw;
+  -webkit-transform: scale(1.1) rotateZ(-4deg);
+          transform: scale(1.1) rotateZ(-4deg);
+}
+
+@media (min-width: 750px) {
+  .startheader.faq::after {
+    bottom: 40vh;
+  }
 }
 
 .startheader.join {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c1555552), to(#24020260)), url("../../pictures/page-3/hero-3.jpg");
-  background-image: linear-gradient(to bottom, #c1555552, #24020260), url("../../pictures/page-3/hero-3.jpg");
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#c15555c7), to(#240202dc)), url("../../pictures/page-3/hero-3.jpg");
+  background-image: linear-gradient(to top, #c15555c7, #240202dc), url("../../pictures/page-3/hero-3.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -329,13 +356,21 @@ body {
   height: 100vw;
   border-radius: 100%;
   border: 20px solid #436dac;
-  -webkit-border-start: 5px;
-          border-inline-start: 5px;
-  -webkit-border-end: 5px;
-          border-inline-end: 5px;
-  background: linear-gradient(182deg, #00132cd7 61%, rgba(21, 52, 98, 0.842));
-  top: 20em;
-  right: -25vw;
+  -webkit-border-start: 15px;
+          border-inline-start: 15px;
+  -webkit-border-end: 15px;
+          border-inline-end: 15px;
+  background: linear-gradient(182deg, #00132c 61%, #153462);
+  top: 70vh;
+  right: -5vw;
+  -webkit-transform: scale(1.1) rotateZ(-4deg);
+          transform: scale(1.1) rotateZ(-4deg);
+}
+
+@media (min-width: 750px) {
+  .startheader.join::after {
+    top: 60vh;
+  }
 }
 
 .navigator {
@@ -381,13 +416,20 @@ body {
 }
 
 @media (min-width: 500px) {
-  .startheader {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+  .startheader__joinHeadline {
+    padding: 0 0 2em 4em;
+  }
+}
+
+@media (min-width: 750px) {
+  .startheader__joinHeadline {
+    padding: 0 0 4em 7em;
+  }
+}
+
+@media (min-width: 1100px) {
+  .startheader__joinHeadline {
+    padding: 0 0 4em 10em;
   }
 }
 
@@ -398,32 +440,42 @@ body {
 
 @media (min-width: 500px) {
   .startheader__text {
-    padding: 7em 4em 0 0;
+    padding: 4em 3em 0 0;
   }
 }
 
 @media (min-width: 750px) {
   .startheader__text {
-    padding: 7em 7em 0 0;
+    padding: 5em 5em 0 0;
   }
 }
 
 @media (min-width: 1100px) {
   .startheader__text {
-    padding: 7em 12em 0 0;
+    padding: 7em 7em 0 0;
+  }
+}
+
+@media (min-width: 500px) {
+  .startheader__text__joinHeadline {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
 }
 
 @media (min-width: 500px) {
   .startheader__text h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
 @media (min-width: 750px) {
   .startheader__text h1 {
-    font-size: 40px;
-    max-width: 350px;
+    font-size: 50px;
   }
 }
 
@@ -443,7 +495,12 @@ body {
   .startheader__text p {
     margin-top: 0.5em;
     font-size: 30px;
-    max-width: 350px;
+  }
+}
+
+@media (min-width: 750px) {
+  .startheader.join {
+    background-position: unset;
   }
 }
 
@@ -1390,9 +1447,27 @@ footer {
   background: white;
   display: -ms-grid;
   display: grid;
-  padding: 2em;
+  padding: 1em;
   -webkit-box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
           box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
+  -ms-grid-columns: 80vw;
+      grid-template-columns: 80vw;
+}
+
+.inputform label {
+  max-width: 80vw;
+}
+
+.inputform label input {
+  width: 100%;
+}
+
+.inputform__motivation {
+  max-width: 80vw;
+}
+
+.inputform__motivation textarea {
+  width: 100%;
 }
 
 .inputform__submitbutton {
@@ -1432,8 +1507,8 @@ footer {
 }
 
 .mainJoinPage {
-  -webkit-transition: all ease-in 1s;
-  transition: all ease-in 1s;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
 }
 
 @media (min-width: 750px) {
@@ -1487,8 +1562,15 @@ footer {
 }
 
 .inputform {
-  -webkit-transition: all ease-in 1s;
-  transition: all ease-in 1s;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+
+@media (min-width: 500px) {
+  .inputform {
+    -ms-grid-columns: unset;
+        grid-template-columns: unset;
+  }
 }
 
 @media (min-width: 750px) {
@@ -1496,6 +1578,7 @@ footer {
     -ms-grid-rows: 0.8fr 0.8fr 3fr auto;
     -ms-grid-columns: 1fr 1fr 0.5fr;
         grid-template: 0.8fr 0.8fr 3fr auto / 1fr 1fr 0.5fr;
+    padding: 2em;
   }
 }
 

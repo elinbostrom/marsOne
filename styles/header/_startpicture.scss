@@ -3,23 +3,29 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: end;
+  align-items: end;
+  justify-content: start;
+
+  &__joinHeadline {
+    padding-bottom: 2em;
+    padding-left: 2em;
+  }
 
   &__text {
     z-index: 10;
-    padding-bottom: 3.5em;
-    padding-left: 2em;
+    padding: 2em 2em 0 0;
+
 
     h1 {
+      font-size: 30px;
       color: white;
       border-bottom: 2px solid white;
     }
 
     p {
+      font-size: 18px;
       color: $blue-text;
       font-weight: bold;
-      max-width: 300px;
     }
   }
 
@@ -32,20 +38,25 @@
     &::after {
       content: "";
       position: absolute;
-      width: 130vw;
+      width: 170vw;
       height: 100vw;
       border-radius: 100%;
       border: 20px solid $headline-text;
-      border-inline-start: 5px;
-      border-inline-end: 5px;
-      background: linear-gradient(182deg, #00132c 61%, rgba(21, 52, 98, 0.9));
-      bottom: 15em;
-      left: -10vw;
+      border-inline-start: 15px;
+      border-inline-end: 15px;
+      background: linear-gradient(182deg, #00132c 61%, rgb(21, 52, 98));
+      bottom: 50vh;
+      left: -5vw;
+      transform: scale(1.1) rotateZ(-4deg);
+
+      @media (min-width: $desktopSize) {
+        bottom: 40vh;
+      }
     }
   }
 
   &.faq {
-    background-image: linear-gradient(to bottom, #c1555552, #24020260),
+    background-image: linear-gradient(to bottom, #c15555c5, #240202c9),
       url("../../pictures/page-2/hero-2.jpg");
     background-position: center;
     background-size: cover;
@@ -53,21 +64,29 @@
     &::after {
       content: "";
       position: absolute;
-      width: 130vw;
+      width: 170vw;
       height: 100vw;
       border-radius: 100%;
       border: 20px solid $headline-text;
-      border-inline-start: 5px;
-      border-inline-end: 5px;
-      background: linear-gradient(182deg, #00132c 61%, rgba(21, 52, 98, 0.9));
-      bottom: 15em;
-      left: -10vw;
+      border-inline-start: 15px;
+      border-inline-end: 15px;
+      background: linear-gradient(182deg, #00132c 61%, rgb(21, 52, 98));
+      bottom: 50vh;
+      left: -5vw;
+      transform: scale(1.1) rotateZ(-4deg);
+
+      @media (min-width: $desktopSize) {
+        bottom: 40vh;
+      }
     }
   }
 
 
   &.join {
-    background-image: linear-gradient(to bottom, #c1555552, #24020260),
+    align-items: start;
+    justify-content: end;
+
+    background-image: linear-gradient(to top, #c15555c7, #240202dc),
       url("../../pictures/page-3/hero-3.jpg");
     background-position: center;
     background-size: cover;
@@ -79,11 +98,16 @@
       height: 100vw;
       border-radius: 100%;
       border: 20px solid $headline-text;
-      border-inline-start: 5px;
-      border-inline-end: 5px;
-      background: linear-gradient(182deg, #00132cd7 61%, rgba(21, 52, 98, 0.842));
-      top: 20em;
-      right: -25vw;
+      border-inline-start: 15px;
+      border-inline-end: 15px;
+      background: linear-gradient(182deg, #00132c 61%, rgb(21, 52, 98));
+      top: 70vh;
+      right: -5vw;
+      transform: scale(1.1) rotateZ(-4deg);
+
+      @media (min-width: $desktopSize) {
+        top: 60vh;
+      }
     }
   }
 }

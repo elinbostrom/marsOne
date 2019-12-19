@@ -44,20 +44,22 @@
   width: 120px;
 }
 
-.readmore__mars button:hover, .readmore__move button:hover, .readmore__sun button:hover {
-  cursor: pointer;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  color: white;
-  background: #2c4f80;
+@media (min-width: 750px) {
+  .readmore__mars button:hover, .readmore__move button:hover, .readmore__sun button:hover {
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    color: white;
+    background: #2c4f80;
+  }
 }
 
 .inputform label {

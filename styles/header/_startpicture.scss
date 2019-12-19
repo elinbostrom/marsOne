@@ -2,9 +2,7 @@
   grid-area: headerPicture;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: start;
+  justify-content: flex-end;
 
   &__headlineWrapper {
     border-bottom: 4px solid white;

@@ -342,9 +342,9 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#c15555c7), to(#240202dc)), url("../../pictures/page-3/hero-3.jpg");
   background-image: linear-gradient(to top, #c15555c7, #240202dc), url("../../pictures/page-3/hero-3.jpg");
   background-position: center;
